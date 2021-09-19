@@ -55,12 +55,16 @@ public class BasicApplicationTests {
 
     @Autowired
     private MockMvc mockMvc;
+	
     @MockBean //mock the repository layer in order to have a unit test for weblayer 
     private InvoiceRepository ir;
+	
     @MockBean //mock the mapper layer in order to have a unit test for weblayer 
     InvoiceRequestMapper irm;
+	
     @MockBean //mock the mapper layer in order to have a unit test for weblayer 
     InvoiceResposeMapper irspm;
+	
     private static final String PASSWORD = "admin";
     private static final String USER = "admin";
 
